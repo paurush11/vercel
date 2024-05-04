@@ -14,7 +14,7 @@ const getFolderPathsFromFolderPath = (folderPath: string) => {
 }
 
 const getFolderPathsFromId = (id: string) => {
-    const folderPath = `./output/${id}`;
+    const folderPath = `./dist/output/${id}`;
     return getFolderPathsFromFolderPath(folderPath);
 }
 

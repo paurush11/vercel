@@ -12,7 +12,7 @@ app.post("/deploy", async (req, res, next) => {
     try {
         const url = req.body.url;
         const id = generateFiveDigitId();
-        await simpleGit().clone(url, `output/${id}`)
+        await simpleGit().clone(url, `./dist/output/${id}`)
         res.json({
             id
         })
@@ -23,7 +23,7 @@ app.post("/deploy", async (req, res, next) => {
 
 app.get("/", (req, res) => {
     try {
-        const response = getFolderPathsFromId('tvqmh')
+        const response = getFolderPathsFromId('zhy5e')
         res.json({
             response
         })
